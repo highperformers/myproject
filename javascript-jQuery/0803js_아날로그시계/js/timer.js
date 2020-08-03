@@ -9,7 +9,7 @@
 
 function timerFn(){
     var toDay =  new Date(); //날짜 생성자
-    var h = toDay.getHours()-12; //12시간제로
+    var h = toDay.getHours()-12; //24시각제를 12시제로
     var m = toDay.getMinutes();
     var s = toDay.getSeconds();
         console.log('h'+h);
