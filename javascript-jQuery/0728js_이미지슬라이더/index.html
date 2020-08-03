@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 슬라이드</title>
+    <script src='js/lib/jquery-1.12.4.min.js'></script>
+    <style>
+        .slide-view {width: 819px; margin: 0 auto; overflow: hidden; border: 1px solid black;}
+        .slide-view .slide-wrap { position: relative; left:calc(-819px*0); width: calc(819px*4);}
+        .slide-view .slide-wrap div { float: left; width: 819px; }
+        .slide-view .slide-wrap div img { width: 100%;}
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="slide-view">
+        <div class="slide-wrap">
+            <div>
+                <img src='img/slide1.jpg'>
+            </div>
+            <div>
+                <img src='img/slide2.jpg'>
+            </div>
+            <div>
+                <img src='img/slide3.jpg'>
+            </div>
+            <div>
+                <img src='img/slide1.jpg'>
+            </div>
+        </div>   
+    </div>
+
+    <script src="js/slide.js"></script>
+
+
+
+
+</body>
+</html>
