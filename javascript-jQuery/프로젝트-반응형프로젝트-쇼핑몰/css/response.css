@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+@media all and (max-width:1200px){
+	
+	#main #section1 { height:760px; }
+	#main #section1 .section1-title { top:292px; }
+	#main #section1 .section1-title h2 { font-size:65px; }
+	#main #section1 .section1-title h3 { font-size:17px; padding:25px 0;  }
+	#main #section1 .section1-title span a { padding:15px 25px; font-size:14px;  }
+
+}
+
+@media all and (max-width:1024px){
+	
+	#main #section1 { height:680px; }
+	#main #section1 .section1-title { top:252px; }
+	#main #section1 .section1-title h2 { font-size:65px; }
+	#main #section1 .section1-title h3 { font-size:17px; padding:25px 0;  }
+	#main #section1 .section1-title span a { padding:15px 25px; font-size:14px;  }
+
+	#main #section2 { padding:80px 0; }	
+	#main #section2 .section-wrap p { width:80%; margin:0 auto; line-height:160%; }
+	#main #section2 .section-wrap p br { display:none; }
+	
+	#main #section5 { padding-top:80px; }
+
+	#main #section6 { padding:80px 0 50px 0; }
+
+	#footer .section-wrap { position:relative; width:90%; margin:0 auto; }	
+	#footer .sns-wrap { position:relative; right:0; top:0; padding-bottom:15px; }	
+	
+}
+
+/* 너비가 800px 이하이고(이면서) 그리고 방향(orientation)이 가로방향(landscape)인경우 */
+@media all and (max-width:800px) and (orientation:landscape) {
+	
+	#header { height:54px; }
+	#header .header-wrap { height:54px; text-align:center; }
+	#header .header-wrap h1  { float:none; display:inline-block; padding:17px 0; }
+	#header .header-wrap h1 a { font-size:20px; }
+	#header .header-wrap nav { display:none; }
+
+	#main #section1 { width:100%; height:400px; background:url(../img/image_1476694546669_2500.jpg) no-repeat 50% 0; background-size:100% auto; }
+	#main #section1 .section1-title { top:35%; }
+	#main #section1 .section1-title h2 { font-size:45px; }
+	#main #section1 .section1-title h3 { font-size:15px; padding:20px 0;  }
+	#main #section1 .section1-title span a { padding:15px 25px; font-size:14px;  }
+	
+}
+
+/* 너비가 800px 이하이고(이면서) 그리고 방향(orientation)이 세로방향(portrait)인경우 */
+@media all and (max-width:800px) and (orientation:portrait) {
+	
+	#header { height:54px; }
+	#header .header-wrap { height:54px; text-align:center; }
+	#header .header-wrap h1  { float:none; display:inline-block; padding:17px 0; }
+	#header .header-wrap h1 a { font-size:20px; }
+	#header .header-wrap nav { display:none; }
+
+	#main #section1 { width:100%; height:700px;  background:url(../img/image_1476694546669_2500.jpg) no-repeat 50% 0; background-size:auto 100%; }
+	#main #section1 .section1-title { top:290px; }
+	#main #section1 .section1-title h2 { font-size:45px; }
+	#main #section1 .section1-title h3 { font-size:15px; padding:20px 0;  }
+	#main #section1 .section1-title span a { padding:15px 25px; font-size:14px;  }
+	
+}
+
+@media all and (max-width:760px){
+	#main #section3 .section3-gallery li { width:50%; }
+		
+	#main #section4 { height:424px; background:url(../img/image_1476761529688_2500.png) no-repeat 50% 0; background-size:100% auto; }
+	#main #section4 .section1-title { top:100px; }
+	#main #section4 .section1-title h2 { font-size:40px; }
+	#main #section4 .section1-title h3 { width:70%; margin:0 auto; font-size:15px; padding:26px 0; line-height:160%; }
+	#main #section4 .section1-title h3 br { display:none; }
+	#main #section4 .section1-title span a { padding:15px 25px; font-size:15px; }
+
+	#main #section5 .section5-gallery { padding-top:40px; }
+	#main #section5 .section5-gallery li { width:100%; }	
+	#main #section5 .section5-gallery li:first-child { padding-bottom:10px; }	
+	#main #section5 .section5-gallery li div a span { width:80%; left:10%; font-size:24px;  }
+		
+	
+}
+
+@media all and (max-width:760px) and (orientation:landscape) {
+	#main #section4 { height:424px; background:url(../img/image_1476761529688_2500.png) no-repeat 50% 0; background-size:100% auto; }
+}
+
+@media all and (max-width:760px) and (orientation:portrait) {
+	#main #section4 { height:424px; background:url(../img/image_1476761529688_2500.png) no-repeat 50% 0; background-size:auto 100%; }	
+}
+
+
+
+@media all and (max-width:500px){
+	
+	#main #section1 { height:700px; }
+	#main #section1 .section1-title { top:278px; }
+	#main #section1 .section1-title h2 { font-size:35px; }
+	#main #section1 .section1-title h3 { font-size:15px; padding:15px 0;  }
+	#main #section1 .section1-title span a { padding:15px 25px; font-size:14px;  }
+
+
+	#main #section3 .section3-gallery li { width:100%; }	
+	
+	#main #section5 .section5-gallery { padding-top:30px; }
+	#main #section5 .section5-gallery li { width:100%; }	
+	#main #section5 .section5-gallery li:first-child { padding-bottom:10px; }	
+	#main #section5 .section5-gallery li div a span { width:80%; left:10%; font-size:17px;  }
+		
+	#main #section2,
+	#main #section5 { padding:50px 0; }
+	#main #section6 { padding:50px 0 30px 0; }
+	
+	#footer .section-wrap { font-size:13px; line-height:140%; }
+}
+
+
+
+
+@media all and (max-width:400px){
+	
+	
+	#main #section4 .section1-title { top:27%; }
+	#main #section4 .section1-title h2 { font-size:30px; }
+	#main #section4 .section1-title h3 { width:70%; margin:0 auto; font-size:14px; padding:17px 0; line-height:160%; }
+	#main #section4 .section1-title h3 br { display:none; }
+	#main #section4 .section1-title span a { padding:10px 22px; font-size:14px; }
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
