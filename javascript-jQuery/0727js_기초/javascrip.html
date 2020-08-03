@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--오픈소스 자바스크립트 라이브러리 프로그램 제이쿼리-->
+    <script src='./js/lib/jquery-1.12.4.min.js'></script>
+
+    <!-- 제이쿼리 실행문 스크립트가 요소 아래에 존재해야 실행 가능하다.
+    단 defer를 script에 포함하면 웹문서 요소들을 먼저 읽어 들이지만 
+    웹문서 버전이 낮은 경우에는 적용 안된다. 그래서 defer 없이 문서 맨뒤에 쓰곤 한다 -->
+     
+
+    
+</head>
+<body>
+
+<!-- <body onload="fn3();"> -->
+
+    
+    <h1 id="element1" onclick="javascript:fn3()">문서제목 네이버로 이동하기...</h1>
+    <h1 id="element2" onclick="javascript:fn4()">window.onload 내에서 함수 호출하기</h1>
+
+    <h2 class="babo"></h2>
+
+
+    <script>
+
+        function fn3(){
+            alert('자바스크립트 함수\n' + 'fn3()');
+            window.open('http://www.naver.com');  //_blank 새창
+            location.href="http://wwww.daum.net";   //_self 현재창
+        }
+
+        //자바스크립트 웹문서를 모두 로드한뒤에 실행하는 스크립트
+       /*  window.onload = function(){
+            function fn4(){
+                alert('window.onload 내에서 함수 호출');
+            }
+        } */
+
+        / //즉시실행함수 표현식
+        (function($){ //파라미터-매개변수
+            function fn2(){
+            alert('제이쿼리 함수입니다.');
+            }
+            fn2()
+        })(jQuery); //아규먼트-전달인자 
+
+         (function(){  //IIFE 즉시실행함수 표현식
+            function fn1(){
+                alert('즉시실행함수 안에서 호출되는 자바스크립트 함수입니다.');
+            }
+            fn1()
+        })();
+
+         
+
+    </script>
+
+    <button class='btnAdd'>증가버튼</button>
+    <button class='btnSub'>감소버튼</button>
+    <div class="txt1" style="font-size: 50px;"></div>
+
+
+
+    <script src="./js/script.js"></script>     
+</body>
+</html>
