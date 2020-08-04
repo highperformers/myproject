@@ -1,0 +1,50 @@
+HTML5+CSS3 웹 표준의 정석 [Do it!]
+W3C (World Wide Web Consoritum) : 2007년 WHAT (Web Hypertext Application Technologies Working Group)의 권고를 받아들여  웹 애플리케이션 1.0을 HTML5로 명명
+웹 표준의 시작 : 웹 콘텐츠에 의미를 부여하고 구조를 만드는 것은 HTML이 담당하고, 이 콘텐츠의 디자인은 CSS가 담당하며, 사용자의 동작에 반응하는 브라우저 상호작용은 Javascript가 맡는다.
+HTML4에서는 화면구성은 대부분 <div>태그를 이용하고 id 속성을 이용해 구분했다면,HTML5는 semantic element를 이용한다 : 
+
+                             <header>
+                     <hgroup> 제목들을 묶어 준다
+                               
+          <nav>              <section>            <aside>
+                        <article> <article>
+                             
+                             <footer>
+              <address> 주소가 아닌 제작자의 이메일 또는 연락처
+
+블록 레벨 요소 : 적용했을 때 새로운 블록이 만들어지는 태그. 해당 태그가 적용된 부분의 앞뒤로 줄바꿈이 된다. <hn>, <p>, <div>, <ul>, <ol>, <dl>, <pre>, <blockquote>, <form>, <hr>, <table>, <fieldset>, <address>
+인라인 요소 : 적용하더라도 줄바꿈이 생기지 않는 태그. <span>, <a>, <img>, <object>, <br>, <sub>, <input>, <select>
+HTML5 Shiv    <script src="js/html5.js"></script>
+<p><time>2012.9.2</time></p> 일반 텍스트가 아니라 정보를 담고 있다
+<time datetime="YYYY-MM-DDThh:mm:ssZ">
+<strong> 강조, <b> 뜻 없이 진하게, <i> 강조를 위한 이탤릭체, <em> 의미 없이 이텔릭체, <mark> 형광펜 효과
+<blockquote>는 블록  레벨 태그, <q>는 인라인 레벨 태그(줄바꿈이 없다)
+<span>은 텍스트 단락 안에서 줄바꿈 없이 일부 텍스트만 묶어서 스타일을 적용할 때 사용
+ul { list-style-type:square; }
+<ol type="a" start="2">
+<tr>, <td>, <th>, <col>, <colgroup>, <thead>, <tbody>, <tfoot>
+<td colspan="합칠 행의 개수">내용</td>, <td rowspan="합칠 행의 개수">내용</td>
+<col style="background:blue;">    //첫 번째 열 배경색 파랑 지정
+<colgroup span="2" style="background:skyblue;">    //두 번째, 세 번째 열을 묶어서 지정
+<col>    //네 번째 열 지정
+<thead> <tfoot> <tbody> 순서로 해야 한다.
+a { text-decoration:none; color:black; },     a img { border:0; }
+<a href="kor.html" title="클릭하면OO입니다"><img src="kor.png"></a>
+<a name="usage"><h3>이용안내</h3></a>
+<a href="#usage"><p>이용안내</p></a>
+요즘같은 N-screen 환경에서는 이미지를 남발하지 말아야 하며, 이미지 삽입 후 CSS를 이용하거나 HTML5의 API를 이용하는 것이 가볍다.
+<img src="dbanner.png" alt="요안도라" title="동백꽃 떨어지는 요안도라"> : tooltip
+<img src="map.png" usemap="#favorites">
+    <map name="favorite">
+        <area shape="rect" coords="0,0,128,116" href="http://www......." target="_blank"> : 좌표지정
+        <area shape="rect" coords="129,0,250,116" href="http://www......." target="_blank"></map>
+<figure>로 미디어 요소 및 텍스트 단락을 묶을 수 있다.
+<figure>
+   <img src="....">
+   <img src="....">
+   <figcaption>동백방과 유채방은........</figcaption>
+</figure>
+<figure>
+   <img src="....">
+   <figcaption>해바라기방은........</figcaption>
+</figure>
