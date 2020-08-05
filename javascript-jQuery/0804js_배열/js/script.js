@@ -142,9 +142,9 @@
 
             function fn(){
                 j++;
-                $('.table').find('tr').eq(0).find('td').eq(j).css({ transition:'all 1s', opacity:1, transform:'scale(1)'}).fadeIn(0, function(){
+                $('.table').find('td').eq(j).css({ transition:'all 1s', opacity:1, transform:'scale(1)'}).fadeIn(0, function(){
                     $(this).css({ opacity:0, transform:'scale(10)'});
-
+               });
             }
         
 
