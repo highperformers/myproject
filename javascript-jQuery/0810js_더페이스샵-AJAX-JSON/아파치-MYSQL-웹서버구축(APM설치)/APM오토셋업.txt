@@ -1,0 +1,34 @@
+mlma19.dothome.co.kr
+
+localhost/st/
+127.0.0.1/st/
+192.168.0.94/st/ 
+http://192.168.0.94/st/ - 스마트폰
+
+
+moonjong2.dothome.co.kr/agajax/
+192.168.0.41/brando/
+
+
+http://autoset.net/xe/download_autoset_10_7_2
+192.168.0.41/agency/
+192.168.0.41/brando/
+127.0.0.1/brando/
+localhost/brando/
+
+아이디 root
+비번 autoset
+변경 
+
+moonjong2.dothome.co.kr/sungjuk
+
+192.168.0.41/sungjuk
+127.0.0.1/sungjuk
+localhost/sungjuk
+localhost/notice
+
+localhost/sungjuk-xml
+
+
+
+
