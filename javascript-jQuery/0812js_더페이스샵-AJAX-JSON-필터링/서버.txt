@@ -1,0 +1,4 @@
+개인서버              : /autoset10/public_html/ 원하는 html폴더를 복사해 넣는다
+localhost/notice/
+127.0.0.1/notice/
+192.168.0.87/notice/  : 내 아이피
